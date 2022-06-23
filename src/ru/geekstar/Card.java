@@ -105,6 +105,13 @@ public class Card {
 
     }
 
+    public void depositing(float sumDepositing) {
+        // внесение денег на карту
+        deposit = deposit + sumDepositing;
+        String transaction = paySystem + " " + numberCard + ": " + "Внесено " + sumDepositing + currency + " Остаток на карте " + deposit + currency;
+        setTransactions(transaction);
+    }
+
     private boolean withdrawal(float sum) {
         if (deposit >= sum) {
             deposit = deposit - sum;
