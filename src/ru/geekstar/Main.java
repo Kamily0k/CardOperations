@@ -27,13 +27,22 @@ public class Main {
         masterCard.setCurrency('$');
         masterCard.pay(50.25f);
 
+        Card unionPayCard = new Card();
+        unionPayCard.setDeposit(10000f);
+        unionPayCard.setNumberCard("5632 9854 7485 1111");
+        unionPayCard.setPaySystem("UNIONPAY");
+        unionPayCard.setCurrency('$');
+        unionPayCard.pay(500.00f);
+
         // Создадим массив карт
-        Card[] cards = new Card[2];
+        Card[] cards = new Card[3];
         cards[0] = visaCard;
         cards[1] = masterCard;
+        cards[2] = unionPayCard;
 
         cards[0].pay(100.00f);
         cards[1].transfer(200.00f);
+        cards[2].transfer(1000.00f);
 
         System.out.println("Операции по всем картам: ");
         for (int idCard = 0; idCard < cards.length; idCard++) {
