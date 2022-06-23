@@ -31,7 +31,7 @@ public class Main {
         unionPayCard.setDeposit(10000f);
         unionPayCard.setNumberCard("5632 9854 7485 1111");
         unionPayCard.setPaySystem("UNIONPAY");
-        unionPayCard.setCurrency('$');
+        unionPayCard.setCurrency('€');
         unionPayCard.pay(500.00f);
 
         // Создадим массив карт
