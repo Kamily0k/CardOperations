@@ -6,7 +6,7 @@ public class Main {
 
         Card visaCard = new Card();
         visaCard.setDeposit(7100.00f);
-        visaCard.setNumberCard("4573 6847 3497 1284");
+        visaCard.setNumberCard("4573 6847 0000 1284");
         visaCard.setPaySystem("VISA");
         visaCard.pay(10000.50f);
         visaCard.pay(250.00f);
