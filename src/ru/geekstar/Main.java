@@ -26,6 +26,7 @@ public class Main {
         masterCard.setPaySystem("MASTERCARD");
         masterCard.setCurrency('$');
         masterCard.pay(50.25f);
+        masterCard.depositing(1000.00f);
 
         Card unionPayCard = new Card();
         unionPayCard.setDeposit(10000f);
